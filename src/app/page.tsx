@@ -1,16 +1,14 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import Main from '@/components/Main'
-import AboutUs from '@/components/AboutUs'
-import Services from '@/components/Services'
+import Hero from "@/components/Hero";
+import Slider from "@/components/Slider";
+import { SlideData } from "../../type/data";
+import { Instragram } from "@/components/Instragram";
+import Contact from "@/components/Contact";
+
 export default function Home() {
-  return (
-    <div>
-      <Header />
-      <Main />
-      <AboutUs/>
-      <Services/>
-      <Footer />
-    </div>
-  )
+  return (<>
+  <Hero heading='POLYGRANITE SHEETS' message=""/>  
+  <Slider slides={SlideData}/>
+  <Instragram/>
+  <Contact/>
+  </>)
 }
