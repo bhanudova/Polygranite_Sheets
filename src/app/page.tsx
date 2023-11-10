@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import Slider from "@/components/Slider";
+import Services from "@/components/Services";
 import { SlideData } from "../../type/data";
 import { Instragram } from "@/components/Instragram";
 import Contact from "@/components/Contact";
@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (<>
   <Hero heading='POLYGRANITE SHEETS' message=""/>  
-  <Slider slides={SlideData}/>
+  <Services/>
   <Instragram/>
   <Contact/>
   </>)
